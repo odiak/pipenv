@@ -19,25 +19,29 @@ environment:
 
   matrix:
 
-    - PYTHON: 'C:\Python27-x64'
-      PYTHON_VERSION: '2.7.x'
-      TEST_SUITE: 'not install'
+    # - PYTHON: 'C:\Python27-x64'
+    #   PYTHON_VERSION: '2.7.x'
+    #   TEST_SUITE: 'not install'
 
-    - PYTHON: 'C:\Python27-x64'
-      PYTHON_VERSION: '2.7.x'
-      TEST_SUITE: 'install'
-      PYTEST_ADDOPTS: '--cache-clear'
-      RUN_INTEGRATION_TESTS: 'True'
+    # - PYTHON: 'C:\Python27-x64'
+    #   PYTHON_VERSION: '2.7.x'
+    #   TEST_SUITE: 'install'
+    #   PYTEST_ADDOPTS: '--cache-clear'
+    #   RUN_INTEGRATION_TESTS: 'True'
+
+    # - PYTHON: 'C:\Python36-x64'
+    #   PYTHON_VERSION: '3.6.x'
+    #   TEST_SUITE: 'not install'
 
     - PYTHON: 'C:\Python36-x64'
       PYTHON_VERSION: '3.6.x'
       TEST_SUITE: 'not install'
 
-    - PYTHON: 'C:\Python36-x64'
-      PYTHON_VERSION: '3.6.x'
-      TEST_SUITE: 'install'
-      PYTEST_ADDOPTS: '--cache-clear'
-      RUN_INTEGRATION_TESTS: 'True'
+    # - PYTHON: 'C:\Python36-x64'
+    #   PYTHON_VERSION: '3.6.x'
+    #   TEST_SUITE: 'install'
+    #   PYTEST_ADDOPTS: '--cache-clear'
+    #   RUN_INTEGRATION_TESTS: 'True'
 
 install:
   - 'set PATH=%PYTHON%;%PYTHON%\Scripts;%PATH%'
